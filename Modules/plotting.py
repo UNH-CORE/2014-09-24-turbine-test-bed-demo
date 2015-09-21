@@ -8,11 +8,6 @@ from Modules.processing import *
 import os
 
 
-# Make figures dir if it doesn't exist
-if not os.path.isdir("Figures"):
-    os.mkdir("Figures")
-
-
 def plot_vertical_lines(xlist, ymaxscale=1, color="gray"):
     if not isinstance(xlist, list):
         x = [x]
