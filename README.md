@@ -36,7 +36,7 @@ Point `origin` to your GitHub repo:
 
     git remote add origin {your-project-clone-URL}
 
-Update from the template can then be incorporated with
+Updates from the template can then be incorporated with
 
     git pull template master
 
