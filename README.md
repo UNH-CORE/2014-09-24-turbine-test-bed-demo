@@ -41,6 +41,17 @@ Updates from the template can then be incorporated with
     git pull template master
 
 
+## How to use this repository
+
+To create figures and/or tables, run
+
+    python plot.py
+
+To process raw data, run
+
+    python process.py
+
+
 ## License
 
 Code licensed under MIT license. See LICENSE for details.
