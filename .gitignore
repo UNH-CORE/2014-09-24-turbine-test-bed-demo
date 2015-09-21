@@ -55,3 +55,6 @@ docs/_build/
 
 # PyBuilder
 target/
+
+# TurbineDAQ project files
+Data/Raw
