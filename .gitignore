@@ -59,4 +59,10 @@ target/
 # More
 Data/Raw
 Figures
+Trash
 temp.py
+*.doc
+*.docx
+*.xls
+*.xlsx
+*.pdf
