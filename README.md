@@ -1,6 +1,7 @@
-# TurbineDAQ project template
+# 2015-09-15 turbine test bed demo
 
-This repo is a template for an experiment automated with [TurbineDAQ](https://github.com/petebachant/TurbineDAQ).
+This is a repository for the turbine test bed demo performed September 24, 2015
+for the OE 400 class.
 
 
 ## Installing dependencies
@@ -17,28 +18,6 @@ Packages available via `conda`:
 Packages available via `pip`:
 
     pip install -r requirements-pip.txt
-
-
-## Creating a new project
-
-First, create a new repository on GitHub, but **do not** add `LICENSE`,
-`.gitignore` or `README.md`.
-
-Next, clone the TurbineDAQ project template to your local machine:
-
-    git clone https://github.com/petebachant/TurbineDAQ-project-template.git {your-project-name-here}
-
-Rename the template's remote name:
-
-    git remote rename origin template
-
-Point `origin` to your GitHub repo:
-
-    git remote add origin {your-project-clone-URL}
-
-Updates from the template can then be incorporated with
-
-    git pull template master
 
 
 ## How to use this repository
