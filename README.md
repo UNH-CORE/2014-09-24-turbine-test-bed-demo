@@ -1,6 +1,22 @@
 # TurbineDAQ project template
 
-This repo is a template for an experiment automated with [TurbineDAQ](https://github.com/petebachant/TurbineDAQ). 
+This repo is a template for an experiment automated with [TurbineDAQ](https://github.com/petebachant/TurbineDAQ).
+
+
+## Installing dependencies
+
+This process assumes the
+[Anaconda](http://continuum.io/downloads) or
+[Miniconda](http://conda.pydata.org/miniconda.html)
+Python packages are installed.
+
+Packages available via `conda`:
+
+    conda install --file requirements-conda.txt
+
+Packages available via `pip`:
+
+    pip install -r requirements-pip.txt
 
 
 ## License
