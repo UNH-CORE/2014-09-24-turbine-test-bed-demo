@@ -1,4 +1,4 @@
-# 2015-09-15 turbine test bed demo
+# 2015-09-24 turbine test bed demo
 
 This is a repository for the turbine test bed demo performed September 24, 2015
 for the OE 400 class.
