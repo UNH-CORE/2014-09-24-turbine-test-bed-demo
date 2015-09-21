@@ -19,6 +19,28 @@ Packages available via `pip`:
     pip install -r requirements-pip.txt
 
 
+## Creating a new project
+
+First, create a new repository on GitHub, but do **not** add `LICENSE`,
+`.gitignore` or `README.md`.
+
+Next, clone the TurbineDAQ project template to your local machine:
+
+    git clone https://github.com/petebachant/TurbineDAQ-project-template.git {your-project-name-here}
+
+Rename the template's remote name:
+
+    git remote rename origin template
+
+Point `origin` to your GitHub repo:
+
+    git remote add origin {your-project-clone-URL}
+
+Update from the template can then be incorporated with
+
+    git pull template master
+
+
 ## License
 
 Code licensed under MIT license. See LICENSE for details.
