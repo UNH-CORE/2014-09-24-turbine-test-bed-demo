@@ -1,5 +1,6 @@
-{"RVAT" : 
-	{"radius" : 0.5,
-	 "diameter" : 1.0,
-	 "height" : 1.0}
+{"RVAT":
+    {"radius": 0.5,
+     "diameter": 1.0,
+     "height": 1.0,
+     "chord_length": 0.14}
 }
