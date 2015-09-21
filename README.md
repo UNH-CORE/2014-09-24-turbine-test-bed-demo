@@ -21,7 +21,7 @@ Packages available via `pip`:
 
 ## Creating a new project
 
-First, create a new repository on GitHub, but do **not** add `LICENSE`,
+First, create a new repository on GitHub, but **do not** add `LICENSE`,
 `.gitignore` or `README.md`.
 
 Next, clone the TurbineDAQ project template to your local machine:
