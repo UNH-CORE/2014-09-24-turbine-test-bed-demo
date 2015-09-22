@@ -530,7 +530,13 @@ class Section(object):
 def process_run(section, nrun):
     print("Processing {} run {}".format(section, nrun))
     run = Run(section, nrun)
-    return run.summary
+    s = pd.Series()
+    s["run"] = run.nrun
+    s["tow_speed"] = run.tow_speed.mean()
+    s["rpm"] = run.rpm.mean()
+    s["torque"] = run.torque.mean()
+    s["drag"] = run.drag.mean()
+    return s
 
 
 def process_latest_run(section):
