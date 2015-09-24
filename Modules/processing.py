@@ -134,6 +134,7 @@ class Run(object):
             self.metadata = json.load(f)
         self.tow_speed_nom = np.round(self.metadata["Tow speed (m/s)"], decimals=1)
         self.tsr_nom = self.metadata["Tip speed ratio"]
+        self.tsr_nom = np.round(self.tsr_nom, decimals=2)
 
     def load_nidata(self):
         nidata = loadhdf(os.path.join(self.raw_dir, "nidata.h5"))
