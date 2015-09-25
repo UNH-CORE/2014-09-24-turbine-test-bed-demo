@@ -568,6 +568,15 @@ def load_test_plan_section(section):
     return df
 
 
+def load_test_plan():
+    """Load test matrix sections."""
+    tpdir = "Config/Test plan"
+    sections = [fname.replace(".csv", "") for fname in os.listdir(tpdir)
+                if fname[-4:] == ".csv"]
+    test_plan = {s: load_test_plan_section(s) for s in sections}
+    return test_plan
+
+
 def batch_process_section(name):
     s = Section(name)
     s.process()
