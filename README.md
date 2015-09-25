@@ -11,24 +11,24 @@ This process assumes the
 [Miniconda](http://conda.pydata.org/miniconda.html)
 Python packages are installed.
 
-Packages available via `conda`:
+First, install packages via `conda`:
 
     conda install --file requirements-conda.txt
 
-Packages available via `pip`:
+Next, install packages with `pip`:
 
     pip install -r requirements-pip.txt
 
 
 ## How to use this repository
 
-To create figures and/or tables, run
-
-    python plot.py
-
 To process raw data, run
 
     python process.py
+
+To create figures and/or tables, run
+
+    python plot.py
 
 
 ## License
