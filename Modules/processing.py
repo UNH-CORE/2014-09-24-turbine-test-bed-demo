@@ -577,16 +577,17 @@ def load_test_plan():
     return test_plan
 
 
-def batch_process_section(name):
+def batch_process_section(name, **kwargs):
     s = Section(name)
-    s.process()
+    s.process(**kwargs)
 
 
-def batch_process_all(sections=["Curve-0", "Curve-1"]):
+def batch_process_all(**kwargs):
     """Batch processes all sections."""
+    sections = load_test_plan().keys()
     for section in sections:
         print("Processing {}".format(section))
-        batch_process_section(section)
+        batch_process_section(section, **kwargs)
 
 
 def process_tare_drag(nrun, plot=False):
