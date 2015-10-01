@@ -26,6 +26,7 @@ if __name__ == "__main__":
 
     for s_name, s_tp in tp.items():
         for i, run in s_tp.iterrows():
+            pr.download_raw(s_name, run.run, "metadata")
             pr.download_raw(s_name, run.run, "nidata")
             pr.download_raw(s_name, run.run, "acsdata")
             if run.vectrino:
