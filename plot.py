@@ -19,8 +19,6 @@ if __name__ == "__main__":
 
     # Call plotting functions here
     pl.plot_torque(marker="o", save=save, savetype=savetype)
-    fig, ax = plt.subplots()
-    pl.plot_torque(ax)
 
     if show:
         plt.show()
