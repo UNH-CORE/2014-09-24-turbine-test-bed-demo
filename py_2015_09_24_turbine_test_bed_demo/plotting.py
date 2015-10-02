@@ -4,8 +4,27 @@ This module contains classes and functions for plotting data.
 """
 
 from __future__ import division, print_function
-from Modules.processing import *
+import matplotlib.pyplot as plt
+from .processing import *
 import os
+
+
+def plot_torque(ax=None, fig=None, save=False, savetype=".pdf",
+                savedir="Figures", **kwargs):
+    """Plot mean turbine torque versus mean turbine RPM."""
+    s = Section("Perf")
+    df = s.data
+    if ax is None:
+        fig, ax = plt.subplots()
+    ax.plot(df.rpm, df.torque, **kwargs)
+    ax.set_xlabel("RPM")
+    ax.set_ylabel("Torque (Nm)")
+    if fig is not None:
+        fig.tight_layout()
+    if save:
+        if not os.path.isdir(savedir):
+            os.makedirs(savedir)
+        fig.savefig(os.path.join(savedir, "torque" + savetype))
 
 
 def plot_vertical_lines(xlist, ymaxscale=1, color="gray"):

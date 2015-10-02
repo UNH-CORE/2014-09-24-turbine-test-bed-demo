@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 """
-This script runs processing functions from `Modules.processing`.
+This script runs processing functions.
 """
 
 from __future__ import print_function
-import Modules.processing as pr
+import py_2015_09_24_turbine_test_bed_demo.processing as pr
 
 
 if __name__ == "__main__":
